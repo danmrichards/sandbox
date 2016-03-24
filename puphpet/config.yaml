@@ -252,11 +252,7 @@ php:
         pear: {  }
         pecl:
             - memcached
-            - PDO
-            - PDO_MYSQL
-            - yaml
             - zip
-            - uploadprogress
     ini:
         display_errors: On
         error_reporting: '-1'

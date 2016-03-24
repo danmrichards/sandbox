@@ -1,1 +1,11 @@
 puphpet/config-custom.yaml
+puphpet/files/dot/ssh/*
+.DS_Store
+.buildpath
+.project
+.idea
+.settings
+.vagrant
+shared/var/www/html/*
+!shared/var/www/html/README.md
+!shared/var/www/html/index.html
