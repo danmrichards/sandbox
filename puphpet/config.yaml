@@ -261,7 +261,6 @@ php:
         max_execution_time: 300
         upload_max_filesize: 20M
         post_max_size: 20M
-        extension: uploadprogress.so
         max_input_vars: 10000
     fpm_ini:
         error_log: /var/log/php-fpm.log
