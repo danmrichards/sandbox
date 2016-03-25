@@ -88,9 +88,12 @@ Link the 'available' vhost to the enable vhost:
 sudo ln -s /etc/nginx/sites-available/example.com /etc/nginx/sites-enabled/example.com
 ```
 
-
 ### Mailhog
 
 This catches outgoing mail from any web projects. This can be managed by viewing the following URL in a browser:
 
 http://192.168.56.111:8025
+
+### MySQL
+
+Connect using SSH tunnel, username `vagrant` and SSH key generated at `puphpet/files/dot/ssh/id_rsa`.

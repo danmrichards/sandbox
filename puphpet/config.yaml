@@ -108,6 +108,7 @@ firewall:
         fr_xrjfdtzqqve8:
             port:
                 - '80'
+                - '5984'
             priority: '100'
             proto: tcp
             action: accept
