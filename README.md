@@ -90,10 +90,12 @@ sudo ln -s /etc/nginx/sites-available/example.com /etc/nginx/sites-enabled/examp
 
 ### Mailhog
 
-This catches outgoing mail from any web projects. This can be managed by viewing the following URL in a browser:
-
-http://192.168.56.111:8025
+This catches outgoing mail from any web projects. This can be managed by viewing the following URL in a browser - http://sandbox.dev:8025
 
 ### MySQL
 
 Connect using SSH tunnel, username `vagrant` and SSH key generated at `puphpet/files/dot/ssh/id_rsa`.
+
+### CouchDB
+
+CouchDB is a NoSQL database that 'embraces the web', fancy! You can access the database endpoints at this URL - http://sandbox.dev:5984. And the configuration UI can be found here - http://sandbox.dev:5984/_utils

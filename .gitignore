@@ -7,5 +7,6 @@ puphpet/files/dot/ssh/*
 .settings
 .vagrant
 shared/var/www/html/*
+!shared/var/www/html/sandbox
 !shared/var/www/html/README.md
 !shared/var/www/html/index.html
