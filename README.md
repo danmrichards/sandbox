@@ -22,6 +22,7 @@ A base Vagrant setup, powered by [PuPHPet](https://puphpet.com/), for developing
 * MySQL
 * CouchDB
 * MailHog
+* Redis
 
 ## Installation
 

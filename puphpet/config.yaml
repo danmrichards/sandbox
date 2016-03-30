@@ -402,7 +402,7 @@ mongodb:
         version: 2.6.0
     databases: {  }
 redis:
-    install: '0'
+    install: '1'
     settings:
         port: '6379'
 sqlite:
