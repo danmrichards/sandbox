@@ -178,7 +178,7 @@ nginx:
                         - '$path_info $fastcgi_path_info'
                     proxy: ''
                     proxy_redirect: ''
-        headless_training:
+        headless_training_backend:
             server_name: headless-training.dev
             server_aliases:
                 - www.headless-training.dev
@@ -229,6 +229,34 @@ nginx:
                         - '$path_info $fastcgi_path_info'
                     proxy: ''
                     proxy_redirect: ''
+        headless_training_frontend:
+            server_name: headless-frontend.dev
+            server_aliases:
+                - www.headless-frontend.dev
+            www_root: '/var/www/html/headless-training/frontend'
+            listen_port: '80'
+            ssl: '0'
+            ssl_cert: ''
+            ssl_key: ''
+            ssl_port: '443'
+            ssl_protocols: ''
+            ssl_ciphers: ''
+            rewrite_to_https: '1'
+            spdy: '1'
+            locations:
+                nxvl_h3064j6v2mlc:
+                    location: /
+                    autoindex: 'off'
+                    internal: 'false'
+                    fastcgi: ''
+                    fastcgi_index: ''
+                    fastcgi_split_path: ''
+                    proxy: 'http://192.168.56.111:3000'
+                    proxy_redirect: ''
+                    proxy_set_header:
+                        - 'Upgrade $http_upgrade'
+                        - 'Connection ''upgrade'''
+                        - 'Host $host'
     proxies: {  }
 apache:
     install: '0'
