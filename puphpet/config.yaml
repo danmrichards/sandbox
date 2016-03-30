@@ -182,7 +182,7 @@ nginx:
             server_name: headless-training.dev
             server_aliases:
                 - www.headless-training.dev
-            www_root: /var/www/html/headless-training/docroot
+            www_root: /var/www/html/headless-training/drupal/docroot
             listen_port: '80'
             index_files:
                 - index.html
