@@ -26,4 +26,7 @@ if [ "" == "$COUCHDB_INSTALLED" ]; then
 
   echo "Change the default bind address..."
   sed -i 's/bind_address = 127.0.0.1/bind_address = 0.0.0.0/g' /etc/couchdb/default.ini
+
+  echo "Restarting CouchDB"
+  sudo service couchdb restart
 fi
