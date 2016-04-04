@@ -1,7 +1,7 @@
 #!/bin/bash
 
 # Check if CouchDB is installed.
-COUCHDB_INSTALLED = $(dpkg-query -W --showformat='${Status}\n' couchdb|grep "install ok installed")
+COUCHDB_INSTALLED=$(dpkg-query -W --showformat='${Status}\n' couchdb|grep "install ok installed")
 echo "Checking for CouchDB: $COUCHDB_INSTALLED"
 
 # Install CouchDB if it does not exist.
